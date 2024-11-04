@@ -1,0 +1,110 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 71px);
+  }
+  
+  .loginForm {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    max-width: 400px; /* Decrease width of the login form */
+    width: 100%;
+  }
+  
+  .loginForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .loginButton {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .loginButton:hover {
+    background-color: #ff7f00;
+  }
+  
+  .loginOptions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .socialButtons {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Align buttons in the center horizontally */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  
+  .googleButton {
+    display: flex;
+    align-items: center;
+    background-color: #d4d4d4;
+    color: rgb(102, 102, 102);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin between buttons */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .googleButton:hover {
+    background-color: #b0b0b0; /* Change color on hover */
+  }
+  
+  
+  .logo {
+    width: 20px; /* Adjust size of logo as needed */
+    margin-right: 10px; /* Add spacing between logo and text */
+  }
+  
+  .memberOption {
+    margin-top: 10px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .memberOption:hover {
+    text-decoration: underline;
+  }
+
+  .forgotPassword {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .forgotPassword:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    .loginContainer {
+      height: calc(100dvh - 227px);
+    }
+  }

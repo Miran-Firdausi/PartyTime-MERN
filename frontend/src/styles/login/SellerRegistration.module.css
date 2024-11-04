@@ -1,0 +1,75 @@
+/* CustomerRegistration.module.css */
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 71px);
+    margin: 10px 0 10px 0;
+  }
+  
+  .registrationContainer {
+    width: 400px; /* Reduced width */
+    height: max-content;
+    padding: 15px 20px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registrationContainer h2 {
+    margin-top: 0;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .formGroup {
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px; /* Increased font size */
+  }
+  
+  .formGroup input[type="email"],
+  .formGroup input[type="text"],
+  .formGroup input[type="password"],
+  .formGroup input[type="tel"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btnSubmit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnSubmit:hover {
+    background-color: #0056b3;
+  }
+  
+  .errorMessage {
+    margin-top: 8px; /* Reduced margin */
+    font-size: 12px; /* Increased font size */
+    color: red;
+  }
+  
+  .successMessage {
+    margin-top: 8px; /* Reduced margin */
+    font-size: 12px; /* Increased font size */
+    color: green;
+  }
+  

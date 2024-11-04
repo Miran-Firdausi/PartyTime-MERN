@@ -1,0 +1,37 @@
+ .quantitySelector {
+    display: inline;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quantitySelector button {
+    background-color: rgb(189, 189, 189);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 -1px;
+  }
+  
+  .minus {
+    padding: 6px 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .plus {
+    padding: 6px 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .qty {
+    padding: 6px 0;
+    width: 30px;
+  }
+
+ .plus:hover {
+    border-right: 1px solid grey;
+  }
+  .minus:hover {
+    border-left: 1px solid grey;
+  }
+  

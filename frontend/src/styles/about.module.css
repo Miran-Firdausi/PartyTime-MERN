@@ -1,0 +1,57 @@
+/* about.module.css */
+
+.aboutPage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutPage h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .aboutPage h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .aboutPage p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .aboutPage ul {
+    margin-bottom: 20px;
+  }
+  
+  .aboutPage ul li {
+    margin-bottom: 10px;
+  }
+  
+  .aboutPage a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .aboutPage a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .outerAboutPage{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100dvh - 82px);
+    
+  }

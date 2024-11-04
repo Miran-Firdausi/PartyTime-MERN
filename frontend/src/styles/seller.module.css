@@ -1,0 +1,136 @@
+.main {
+    margin-bottom: 10rem;
+}
+
+.productTitle {
+
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 1.5rem;
+    align-items: center;
+}
+
+.marginMe, .marginMe2 {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+}
+
+.marginMe2 {
+    display: flex;
+    justify-content: center;
+}
+
+.analytics {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+.graph img {
+    height: 20rem;
+}
+
+.popupContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popupContent p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.popupContent div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.closeButton {
+    cursor: pointer;
+    background-color: red;
+}
+
+.addButton {
+    cursor: pointer;
+    background-color: green;
+}
+
+body.popup-open {
+    overflow: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.buttons button {
+    color: white;
+    font-size: 1rem;
+    height: 2rem;
+    padding: 0.2rem;
+    width: 5rem;
+}
+
+
+
+.sellerProductAdd {
+    width: auto;
+    height: auto;
+    padding: 0.7rem;
+    border: none;
+    color: white;
+    border-radius: 15%;
+    background-color: #ff9900;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in, transform 0.05s ease-in-out; 
+}
+
+.sellerProductAdd:hover {
+    background-color: #ff7f00;
+    transform: scale(1.1); 
+}
+
+.sellerProductAdd:active {
+    transform: scale(1);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure the popup is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgText {
+    display: flex;
+    padding-right: 2rem;
+}

@@ -1,0 +1,106 @@
+/* Cart Item */
+.cartItem {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    align-items: flex-start;
+}
+
+/* Product Image */
+.productImage {
+    height: 400px;
+    width: 400px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* added */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(243, 243, 243, 0.1);
+}
+
+.productImage img {
+    max-width: 100%; /* changed */
+    max-height: 100%; /* changed */
+    object-fit: cover;
+}
+.productImage:hover {
+    cursor: zoom-in;
+}
+
+/* Item Details */
+.itemDetails {
+    flex-grow: 1;
+}
+
+/* Product Name */
+.productName {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #202020;
+}
+
+/* Price Container */
+.priceContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Original Price */
+.originalPrice {
+    margin-right: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Discounted Price */
+.discountedPrice {
+    font-weight: bold;
+    color: #00b894;
+}
+
+/* Product Description */
+.productDescription {
+    margin-bottom: 10px;
+    color: #3b3b3b;
+    font-size: 1rem;
+}
+
+/* Quantity Container */
+.quantityContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantityContainer label {
+    font-weight: bold;
+}
+
+/* Product Category */
+.productCategory {
+    color: #202020;
+    margin-bottom: 5px;
+}
+
+/* Product Weight */
+.productWeight {
+    color: #202020;
+    margin-bottom: 5px;
+}
+
+/* Product Expiry */
+.productExpiry {
+    color: #202020;
+    margin-bottom: 5px;
+}

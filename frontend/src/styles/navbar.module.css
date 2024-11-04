@@ -1,0 +1,406 @@
+
+/* navbar.module.css */
+
+/* Global reset */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #924fe9;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition effect for color change */
+  }
+  
+  .logo:hover {
+    color: #ffcc00; /* Change the color on hover */
+  }
+  
+  
+  /* Update styles for .navbar-location */
+  /* Improved styles for .navbar-location */
+  .navbar-location {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    color: #FFA500; /* Change text color to match the brand color */
+    cursor: pointer;
+    padding: 8px 16px; /* Add padding for better spacing */
+    background-color: transparent; /* Change background color to white */
+    border-radius: 20px; /* Add border radius for a rounded appearance */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for background color and text color */
+    margin-right: 20px;
+    border: 2px solid #FFA500; /* Change border color to match the brand color and increase border width */
+  }
+  
+  /* Hover effect */
+  .navbar-location:hover {
+    background-color: #FFA500; /* Change background color on hover to match the brand color */
+    color: #fff; /* Change text color on hover to white */
+  }
+  
+  
+  .navbar-location span {
+    margin-left: 5px;
+  }
+  
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+  }
+  
+  .navbar-search input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 100%; /* Make the input field fill the entire available width */
+    height: 80%;
+  }
+  .navbar-search input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FFA500; /* Add focus effect */
+  }
+  
+  /* Adjust styles for the search button */
+  .navbar-search button {
+    background-color: #ff9900;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /* Add padding for better spacing */
+    border-radius: 0 5px 5px 0; /* Add border radius for rounded corners */
+    margin-left: -1px; /* Move the button slightly to the left to align with the input field */
+    vertical-align: middle; /* Align the button vertically in the middle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.2s ease-in-out; /* Add transition for hover effect */
+    width: 50px;
+    height: 40px;
+  }
+  
+  .navbar-search button:hover {
+    transform: scale(1.05); /* Grow the button on hover */
+  }
+  
+  
+  /* Ensure the button sticks to the search bar */
+  .navbar-search {
+    position: relative;
+    display: inline-flex; /* Use inline-flex to allow vertical alignment */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .navbar-search input[type="text"] {
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-right: -1px; /* Move the input field slightly to the right to align with the button */
+    vertical-align: middle; /* Align the input field vertically in the middle */
+  }
+  
+  
+  .navbar-links {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .navlink:hover {
+    color: rgb(192, 192, 192);
+  }
+  
+/* Add styles to make .Login look like a button */
+.Login{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px; /* Adjust padding as needed */
+  width: 100px;
+  height: 40px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline if it's an anchor element */
+  font-size: 16px; /* Adjust font size as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.2s ease-in-out; /* Add transition for hover effect */
+}
+
+/* Hover effect */
+.Login:hover, .cart:hover {
+  transform: scale(1.05); /* Grow the button on hover */
+}
+
+.Login img {
+  height:25px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  background-color: #ff9900;
+  padding: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.2s ease-in-out; /* Add transition for hover effect */
+}
+
+.cart>span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cartImage {
+  height: 30px;
+  margin-right: 6px;
+  justify-self: left;
+}
+
+.qty {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1rem; /* Adjust padding for better spacing */
+    }
+
+  .navbar-left,
+  .navbar-links {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem; /* Add space between sections */
+      justify-content: space-between;
+  }
+
+  .navbar-search {
+      width: 100%;
+      margin-bottom: 1rem; /* Add space between sections */
+  }
+
+  .navbar-search input[type="text"] {
+      width: calc(100% - 65px); /* Adjust input width */
+  }
+
+  .Login,
+  .cart {
+      width: calc(100% - 30px); /* Adjust button width */
+      margin-bottom: 0.5rem; /* Add less space between buttons */
+      height: 50px;
+  }
+
+  .Login img {
+      height: 20px; /* Reduce image height */
+  }
+
+  .cart {
+      padding: 0.5rem; /* Adjust padding */
+      margin-right: 20px;
+  }
+
+  .navbar-links {
+    width: 95%;
+    margin-right: 20px;
+  }
+}
+
+/* Add styles for the location dropdown menu */
+.locationMenu {
+  position: absolute;
+  top: calc(80% ); 
+  left: 80px;
+  background-color: #fff; /* Background color for the dropdown menu */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add shadow */
+  padding: 10px 30px; /* Add padding for better spacing */
+  z-index: 1000; /* Ensure the menu appears above other elements */
+  width: 300px; /* Set a fixed width for the menu */
+  padding-bottom: 0;
+}
+
+.locationMenu h3 {
+  color: #313131;
+  font-size: 17px; /* Set font size for the heading */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+
+.locationOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.locationOptions button {
+  border-style: none;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 8px 16px; /* Add padding for better spacing */
+  margin-bottom: 10px; /* Add space between buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: #367ad3;
+  color: white;
+  font-weight: bold;
+}
+
+.locationOptions button:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.locationOptions input[type="text"] {
+  padding: 8px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Add border for the input field */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin-bottom: 10px; /* Add space below the input field */
+  width: 100%; /* Make the input field fill the entire available width */
+  margin-bottom: 20px;
+  
+}
+
+/* Input component */
+/* navbar.module.css */
+
+.addressInput {
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.suggestionsList {
+  position: relative;
+  width: 300px;
+  right: 30px;
+  background-color: #fff;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestionsList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+  font-weight: 500;
+  border-bottom: 0.5px solid #d1d1d1;
+}
+
+.suggestion:hover {
+  background-color: #dbdbdb;
+}
+
+
+.currentAddress {
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.mapIcon {
+  min-width: 20px;
+ min-width: 20px;
+}
+
+.searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.searchResultsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchResultsList li {
+  padding: 8px 0;
+}
+
+.searchResultsList li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.searchResultsList li a:hover {
+  color: #007bff;
+}
+
+.resultRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resultRow:hover {
+  cursor: pointer;
+  color: blue;
+}

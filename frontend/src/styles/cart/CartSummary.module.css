@@ -1,0 +1,27 @@
+/* CartSummary.module.css */
+.cartSummary {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .totalPrice {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .proceedButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .proceedButton:hover {
+    background-color: #0056b3;
+  }
+  

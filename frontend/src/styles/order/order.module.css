@@ -1,0 +1,38 @@
+/* styles/order/order.module.css */
+
+.orderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 71px);
+  }
+  
+  .loadingContainer,
+  .orderConfirmation {
+    text-align: center;
+  }
+  
+  .loadingImage {
+    width: 100px;
+  }
+  
+  .orderPlacedImage {
+    width: 150px;
+  }
+  
+  .loadingText,
+  .confirmationText {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Loading Animation */
+  /* @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loadingImage {
+    animation: spin 1s linear infinite;
+  } */
+  
