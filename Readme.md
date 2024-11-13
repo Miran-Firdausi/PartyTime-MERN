@@ -1,4 +1,5 @@
 Party Time 🎉
+
 Party Time is an e-commerce website specializing in bulk product ordering with tracking features to find and order from the nearest stores. The platform includes intelligent pricing calculations based on product expiry dates to minimize resource waste, helping both customers and businesses reduce costs and prevent wastage.
 
 Table of Contents
