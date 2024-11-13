@@ -71,6 +71,5 @@ POST /api/pricing/update: Adjust pricing model (Admin only)
 Contributing
 We welcome contributions! Please fork this repository, make your changes, and submit a pull request for review.
 
-License
-This project is licensed under the MIT License.
+
 
